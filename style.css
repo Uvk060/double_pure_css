@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #52acd6;
+}
+.double {
+  position: relative;
+  font-size: 8rem;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.top {
+  position: relative;
+  width: 72rem;
+  height: 6.1rem;
+  background-color: #52acd6;
+  filter: drop-shadow(0 80px 50px rgba(0, 0, 0, 0.2));
+  transform: rotate(-8deg);
+}
+
+.shadow {
+  position: absolute;
+  width: 77rem;
+  height: 5.9rem;
+  background: #72c8f0;
+  transform: rotate(-7deg);
+  top: 0.8rem;
+  left: -2rem;
+
+  overflow: hidden;
+}
+
+.shadow::before {
+  content: "DOUBLE PEACE";
+  position: absolute;
+  left: 2rem;
+  top: 0.6rem;
+  transform: rotate(4deg);
+}
+
+.text {
+  width: 64rem;
+  position: absolute;
+  z-index: -1;
+  top: 3.5rem;
+  left: 0.3rem;
+}
